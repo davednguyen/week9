@@ -4,37 +4,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>David 's portfolia page</title>
-        <link rel="stylesheet" type="text/css" href="styles/meyer-reset.css">
         <!-- Latest compiled and minified CSS -->
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-          <!-- Optional theme -->
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
           <!-- Latest compiled and minified JavaScript -->
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
       </head>
       <body>
         <header>
-          <!-- logo, name of the site, main nagivation-->
-
-          <h1>About All Things</h1>
-          <img src="images/puppy.jpg" class="img-circle" alt="puppy image">
-
-         <ul class="nav nav-tabs">
-           <li class="dropdown"><a href="#">Home</a></li>
-           <li class="dropdown"><a href="https://davednguyen.github.io/week5/about/about-me.html">About Me</a></li> 
-           <li class="dropdown"><a href="https://davednguyen.github.io/week5/project/projects-page.html">Projects</a></li>
-        </ul>
+          <div class="container">
+              <!-- logo, name of the site, main nagivation-->
+               <figure class="figure">
+                <h1><span class="badge badge-secondary">About All Things</span></h1>
+                <img src="images/puppy.jpg" class="figure-img img-fluid img-circle" alt="puppy image">
+               </figure>
+             <ul class="nav nav-tabs">
+               <li class="dropdown"><a href="#">Home</a></li>
+               <li class="dropdown"><a href="https://davednguyen.github.io/week5/about/about-me.html">About Me</a></li> 
+               <li class="dropdown"><a href="https://davednguyen.github.io/week5/project/projects-page.html">Projects</a></li>
+            </ul>
+         </div>
         </header>
-
+        <div class="container">
         <article>
           <!--Headline, Main article, and an image-->
           <h2>About 3D Printers</h2>
           <p>3D printers is getting popular over the time because it has many way for us to create mark-up models of stuffs that we 
              like to design or work on it as prototype <q>this is a real printer that we should use</q>. 
           </p>
-          <img src="https://images.monoprice.com/productlargeimages/157101.jpg" class="img-thumbnail" height="300" width="300" alt="3D printer image">
+          <figure class="figure">
+              <img class="figure-img img-fluid rounded" src="https://images.monoprice.com/productlargeimages/157101.jpg" alt="3D printer image">
+              <figcaption class="figure-caption">3D Machine</figcaption>
+          </figure>
         </article>
         <aside>
           <!-- Author info, any other important infomraiton -->
@@ -44,14 +44,17 @@
         </aside> 
         <p>testing page</p>
         <footer>
-          <nav>
-            <a href="#">Home</a>
-            <a href="https://davednguyen.github.io/week5/about/about-me.html">About Me</a>
-            <a href="https://davednguyen.github.io/week5/project/projects-page.html">Projects</a>
-            <a href="mailto:davednguyen@gmail.com"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;contact</a>
+          <nav aria-label="breadcrumb" role="navigation">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="https://davednguyen.github.io/week5/about/about-me.html">About Me</a></li>
+                <li class="breadcrumb-item"><a href="https://davednguyen.github.io/week5/project/projects-page.html">Projects</a></li>
+                <li class="breadcrumb-item"><a href="mailto:davednguyen@gmail.com">contact</a></li>
+            </ol>
           </nav>
              <!-- copy right info and name -->
           <p>&copy; 2017 || David Nguyen</p>
         </footer>
+        </div><!-- end of container-->
       </body>
     </html>
